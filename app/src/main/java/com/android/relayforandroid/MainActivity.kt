@@ -26,7 +26,6 @@ class MainActivity : ComponentActivity() {
                         .fillMaxWidth()
                         .padding(16.dp)
                 ) {
-
                 }
             }
         }
