@@ -1,0 +1,171 @@
+{
+  "name": "button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "a1eiZhqANPWkkn3N5gPFhQ",
+    "node": "2:29",
+    "version": "3249630373",
+    "component-id": "0712d96db19f852d37648859558bce0f0b17cca5"
+  },
+  "default": "Button",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "text",
+        "id": "I am Button"
+      },
+      {
+        "type": "group",
+        "id": "radio_button_checked"
+      }
+    ],
+    "modes": {
+      "Button": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$onClick",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 1",
+              "I am Button",
+              "radio_button_checked"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 1",
+            "border-radius": "4.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "I am Button",
+            "margin": {
+              "left": "130.0",
+              "top": "19.0",
+              "right": "130.0",
+              "bottom": "16.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "15.0",
+            "line-height": "1.2102272033691406",
+            "typeface": "Inter"
+          },
+          {
+            "id": "radio_button_checked",
+            "margin": {
+              "left": "97.0",
+              "top": "15.0",
+              "right": "222.0",
+              "bottom": "14.0"
+            },
+            "is-structured": "false",
+            "children": "$icon",
+            "clip-content": "false"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "icon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Button",
+      "size": {
+        "width": 343.0,
+        "height": 53.0
+      },
+      "parameters": {
+        "text": "I am Button",
+        "icon": [
+          {
+            "type": "vector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            }
+          },
+          {
+            "type": "vector",
+            "margin": "2.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "radio_button_checked.svg"
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
