@@ -1,14 +1,14 @@
 {
-  "name": "button",
+  "name": "new_button",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "a1eiZhqANPWkkn3N5gPFhQ",
-    "node": "2:29",
+    "node": "15:10",
     "version": "3289044400",
-    "component-id": "0712d96db19f852d37648859558bce0f0b17cca5"
+    "component-id": "4adb169b3861fb9875abad74270cf23dce14c243"
   },
-  "default": "Button",
+  "default": "New Button",
   "design": {
     "atoms": [
       {
@@ -18,25 +18,25 @@
       },
       {
         "type": "group",
-        "id": "radio_button_checked"
+        "id": "airplanemode_active"
       },
       {
         "type": "text",
-        "id": "I am Button"
+        "id": "This is Button"
       }
     ],
     "modes": {
-      "Button": {
+      "New Button": {
         "rules": [
           {
             "id": "top_level",
             "padding": {
-              "left": "97.0",
-              "top": "14.0",
-              "right": "97.0",
-              "bottom": "14.0"
+              "left": "80.0",
+              "top": "13.0",
+              "right": "80.0",
+              "bottom": "13.0"
             },
-            "border-radius": "4.0",
+            "border-radius": "8.0",
             "tap-handler": "$onClick",
             "size-constraints": {
               "width-constraints": {
@@ -46,21 +46,22 @@
                 "sizing-mode": "shrink"
               }
             },
+            "stroke-width": "2.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
             "arrangement": "row",
             "children": [
-              "radio_button_checked",
-              "I am Button"
+              "airplanemode_active",
+              "This is Button"
             ],
-            "item-spacing": "9.0",
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "234.04580152671755",
-              "saturation": "0.5695652173913043",
-              "value": "0.9019607843137255"
-            }
+            "item-spacing": "4.0"
           },
           {
-            "id": "radio_button_checked",
+            "id": "airplanemode_active",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -72,16 +73,16 @@
               }
             },
             "is-structured": "false",
-            "children": "$picture",
+            "children": "$icon",
             "clip-content": "false"
           },
           {
-            "id": "I am Button",
+            "id": "This is Button",
             "font-weight": "600.0",
             "color": {
               "alpha": "1.0",
               "hue": "0.0",
-              "saturation": "0.0",
+              "saturation": "0.9803921568627451",
               "value": "1.0"
             },
             "text-content": "$text",
@@ -101,7 +102,7 @@
       "required": false,
       "description": ""
     },
-    "picture": {
+    "icon": {
       "data-type": "list-item",
       "required": false,
       "description": ""
@@ -114,13 +115,13 @@
   },
   "previews": [
     {
-      "design": "Button",
+      "design": "New Button",
       "size": {
-        "width": 310.0,
-        "height": 52.0
+        "width": 288.0,
+        "height": 50.0
       },
       "parameters": {
-        "picture": [
+        "icon": [
           {
             "type": "vector",
             "size-constraints": {
@@ -147,10 +148,10 @@
                 "value": 1.0
               }
             },
-            "vector-content": "radio_button_checked.svg"
+            "vector-content": "airplanemode_active.svg"
           }
         ],
-        "text": "I am Button"
+        "text": "This is Button"
       }
     }
   ],
